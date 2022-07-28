@@ -1,0 +1,27 @@
+{
+  "name": "alpaca-trade",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "paper-dev": "IS_PAPER=paper nodemon src/app.js",
+    "live-dev": "IS_PAPER=live nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengxuand/alpaca-trade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hengxuand/alpaca-trade/issues"
+  },
+  "homepage": "https://github.com/hengxuand/alpaca-trade#readme",
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^2.16.1",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
