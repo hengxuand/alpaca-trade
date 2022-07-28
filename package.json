@@ -2,10 +2,9 @@
   "name": "alpaca-trade",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
-    "paper-dev": "IS_PAPER=paper nodemon src/app.js",
-    "live-dev": "IS_PAPER=live nodemon src/app.js",
+    "paper-dev": "IS_PAPER=paper ts-node-dev src/app.ts",
+    "live-dev": "IS_PAPER=live ts-node-dev src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +19,10 @@
   },
   "homepage": "https://github.com/hengxuand/alpaca-trade#readme",
   "dependencies": {
-    "@alpacahq/alpaca-trade-api": "^2.16.1",
-    "dotenv": "^16.0.1",
-    "nodemon": "^2.0.19"
+    "@master-chief/alpaca": "^6.3.20",
+    "@types/dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
   }
 }
