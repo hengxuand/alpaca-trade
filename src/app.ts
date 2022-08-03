@@ -11,12 +11,19 @@ const alpacaClient = new AlpacaClient({
   rate_limit: true,
 });
 
-alpacaClient.placeOrder({
-  symbol: 'NIO',
-  qty: 1,
-  side: 'buy',
-  type: 'market',
-  time_in_force: 'day',
-}).then((order) => {
-  console.log(order);
-});
+// alpacaClient.getPositions().then((positions) => {console.log(positions)})
+
+// alpacaClient.placeOrder({
+//   symbol: 'NIO',
+//   qty: 1,
+//   side: 'buy',
+//   type: 'market',
+//   time_in_force: 'day',
+// }).then((order) => {
+//   console.log(order);
+// });
+
+alpacaClient.getSnapshot({
+  symbol:"NIO",
+}).then((trades) => {console.log(trades)})
+jifodsjoi
