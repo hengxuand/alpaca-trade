@@ -26,4 +26,3 @@ const alpacaClient = new AlpacaClient({
 alpacaClient.getSnapshot({
   symbol:"NIO",
 }).then((trades) => {console.log(trades)})
-jifodsjoi
